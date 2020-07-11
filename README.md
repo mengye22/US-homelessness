@@ -22,4 +22,3 @@ The purpose of this project is to explore the homeless population by state datas
 ### Dataset Sources: 
 >* Homeless Shelter Directory: https://www.homelessshelterdirectory.org/ 
 >* US Department of Housing and Urban Development: https://www.hud.gov/2019-point-in-time-estimates-of-homelessness-in-US
-
