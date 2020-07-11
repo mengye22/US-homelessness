@@ -31,7 +31,7 @@ d3.json("static/data/shelters_clean.geojson", function (gData) {
 
       // Add a new marker to the cluster group and bind a pop-up
       markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
-        .bindPopup(gData.features[i].properties.Name));
+        .bindPopup(`Name:${gData.features[i].properties.Name}<br> Zipcode: ${gData.features[i].properties.Zipcode}`));
     }
 
   }

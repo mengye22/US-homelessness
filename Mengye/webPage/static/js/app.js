@@ -61,10 +61,8 @@ d3.json(link, function (sData) {
             //    $("#mapid").html("");
             //    $( "<div id=\"mapid\" style=\"height: 500px;\"></div>" ).appendTo("#myMap");
             // }
-            function map(a,b){
-                
-            }
 
+       
             var myMap = new L.map("mapid", {
                 center: [lat, lng],
                 zoom: 14
