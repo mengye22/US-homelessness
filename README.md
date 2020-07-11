@@ -28,7 +28,7 @@ The purpose of this project is to explore the homeless population by state datas
 
 ### Website Link:
 https://mengye22.github.io/US-homelessness/master/templates/index.html 
-(Needs api key to dispaly the map, file on Mengye/webPage/static/js/config.js and Kay/static/config.js)
+* (Needs api key to dispaly the map, file on Mengye/webPage/static/js/config.js and Kay/static/config.js)
 
 ### Dataset Sources: 
 >* Homeless Shelter Directory: https://www.homelessshelterdirectory.org/ 
