@@ -13,4 +13,13 @@ This project explores the homeless population for each state in the US. The fina
 >   * 5: Html web page 
 
 ### Purpose: 
-The purpose of this project is to collect the homeless population by state datasets from various sources. The collection of datasets is transformed in order to make it usable for data analysis.  
+The purpose of this project is to explore the homeless population by state datasets from various sources. The collection of datasets is cleaned and transformed in order to make it usable for data analysis and visualizations.  
+
+### Scope: 
+* Annual homeless population count by state.
+* The collected data includes year 2010 through 2019.
+
+### Dataset Sources: 
+>* Homeless Shelter Directory: https://www.homelessshelterdirectory.org/ 
+>* US Department of Housing and Urban Development: https://www.hud.gov/2019-point-in-time-estimates-of-homelessness-in-US
+
