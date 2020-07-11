@@ -1,6 +1,6 @@
 
 (function(){
-    var width = 1000;
+    var width = 1200;
     var height = 700;
 
     var svg = d3.select("#chart")

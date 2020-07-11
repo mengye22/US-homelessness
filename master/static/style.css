@@ -20,7 +20,8 @@ body{
 }
 
 .jumbotron{
-  background-color: #6495ED;
+  /* background-color: #6495ED; */
+  background-color: lightseagreen;
   text-align: center;
   padding: 1%;
 }
@@ -81,7 +82,7 @@ nav ul li a{
 }
 
 a.active, a:hover{
-  background: #6495ED;
+  /* background: #6495ED; */
   transition: .5s;
 }
 

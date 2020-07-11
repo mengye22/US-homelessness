@@ -2,8 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <title>Homeless Shelters info</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"> -->
 
     <!-- Importing Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -18,7 +19,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   
     <!-- Importing the link to CSS File -->
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="../../master/static/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <!-- Leaflet CSS -->
@@ -40,47 +41,109 @@
   </head>
 
   <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      
-      <label class="logo">US Homelessness</label>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a class="active" href="file.html">Jay</a></li>
-        <li><a class="active" href="/2019RadialBarChart/index.html">2019RadialBarChart</a></li>
-        <li><a class="active" href="tvt.html">Kay</a></li>
-        <li><a class="active" href="stats.html">Mengye</a></li>
-        <li><a class="active" href="about.html">About Us</a></li>
-      </ul>
-    </nav>
+    <div class="navigation">
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        
+        <label class="logo">US Homelessness</label>
+        <ul>
+          <li><a class="active" href="../../master/templates/index.html">Home</a></li>
+          <li><a class="active" href="file.html">Jay</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false">
+              Charts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="max_temperature.html">Radial Bar Chart</a>
+              <a class="dropdown-item" href="humidity.html">Dot Chart</a>
+            </div>
+          </li>
+          <!-- <li><a class="active" href="/2019RadialBarChart/index.html">2019RadialBarChart</a></li> -->
+          <li><a class="active" href="tvt.html">Kay</a></li>
+          <li><a class="active" href="shelters_loc.html">SheltersLocation</a></li>
+          <li><a class="active" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <hr style="border: 1px solid #F8F8FF;" />
 
-    <div id = "chart"></div>
+    <!-- Create JumboTron -->
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+          <h2>US Shelters Location Distrubution</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid padding" style="background: #000000;">
+      <div class="row padding">
+        <div class="col-12">
+          <p class="one">
+            Number of shelter locations are represented by the size of the bubble.
+          </p>
+  
+        </div>
+      </div>
+    </div>
+
+
+    <div class = "col-md-12">
+      <div id = "chart"></div>
+    </div>
+
+    <hr style="border: 1px solid #F8F8FF;" />
+	  <br>
+    <br>
+  
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+          <h2>Search Shelters Location Near You</h2>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <form id="form">
+        <div class="col-md-6">
+          <form id="form" style="padding: 5%;">
             <div class="form-group">
               <label for="patient-form">Search Shelters by Zipcode</label>
               <input class="form-control" id="zipcode-input" name="zipcode-form" type="text" placeholder="99762">
             </div>
-            <button id="button" type="button" class="btn btn-default">Search</button>
+            <button id="button" type="button" class="btn btn-default" style="color: white; background-color:#0082e6;">Search</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form id="form" style="padding: 5%;">
+            <h2>Shelters Info</h2>
+            <ul class="summary"></ul>
+            <div id="mapid"></div>
           </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Shelters Location</h1>
-          <ul class="summary"></ul>
+    </div>
+  
+
+    <hr style="border: 1px solid #F8F8FF;" />
+	  <br>
+    <br>
+
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+          <h2>Cluster Map for Shelters</h2>
         </div>
       </div>
-      <div id="mapid"></div>
     </div>
- <!-- map div -->
-    <h3>Shelters Map</h3>
+
     <div id="map"></div>
 
     <!-- Leaflet JS -->
