@@ -47,21 +47,23 @@ d3.json(link, function (sData) {
 
             // var oldmap = d3.select("#mapid");
             // oldmap.html("");
-            if (myMap) {
-                myMap.update([lat,lng]);
-                // myMap.redraw()
-                // myMap.invalidateSize()
-                // myMap = null;
-                // myMap.off();
-                // myMap.remove()
-            }
+            // if (myMap) {
+            //     myMap.update([lat,lng]);
+            //     // myMap.redraw()
+            //     // myMap.invalidateSize()
+            //     // myMap = null;
+            //     // myMap.off();
+            //     // myMap.remove()
+            // }
 
             // if(myMap != undefined || myMap != null){
             //     map.remove();
             //    $("#mapid").html("");
             //    $( "<div id=\"mapid\" style=\"height: 500px;\"></div>" ).appendTo("#myMap");
             // }
-
+            function map(a,b){
+                
+            }
 
             var myMap = new L.map("mapid", {
                 center: [lat, lng],
