@@ -47,13 +47,14 @@ d3.json(link, function (sData) {
 
             // var oldmap = d3.select("#mapid");
             // oldmap.html("");
-            // if (myMap) {
-            //     myMap.redraw()
-            //     // myMap.invalidateSize()
-            //     // myMap = null;
-            //     // myMap.off();
-            //     // myMap.remove()
-            // }
+            if (myMap) {
+                myMap.update([lat,lng]);
+                // myMap.redraw()
+                // myMap.invalidateSize()
+                // myMap = null;
+                // myMap.off();
+                // myMap.remove()
+            }
 
             // if(myMap != undefined || myMap != null){
             //     map.remove();
@@ -66,6 +67,8 @@ d3.json(link, function (sData) {
                 center: [lat, lng],
                 zoom: 14
             });
+
+            // myMap.update([lat,lng]);
 
             L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
                 attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",

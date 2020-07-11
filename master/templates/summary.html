@@ -1,18 +1,3 @@
-<!-- <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Dot Plot</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
-<body>
-<script type="module">
-
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
-
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
-
-</script> -->
-
 <!-- Set Up -->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,8 +6,7 @@ const main = runtime.module(define, Inspector.into(document.body));
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<title>Radial Stacked Bar Chart II</title>
-    <link rel="stylesheet" type="text/css" href="./inspector.css">
+	<title>US Homelessness</title>
 
     <!-- Importing Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -33,7 +17,7 @@ const main = runtime.module(define, Inspector.into(document.body));
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	<!-- Importing the link to CSS File -->
-	<link href="../../master/static/style.css" rel="stylesheet">
+	<link href="../static/style.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   </head>
@@ -48,8 +32,7 @@ const main = runtime.module(define, Inspector.into(document.body));
 		
 		<label class="logo">US Homelessness</label>
 		<ul>
-			<li><a class="active" href="../../master/templates/index.html">Home</a></li>
-			<li><a class="active" href="file.html">Jay</a></li>
+			<li><a class="active" href="index.html">Home</a></li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
 				aria-haspopup="true" aria-expanded="false">
@@ -58,26 +41,26 @@ const main = runtime.module(define, Inspector.into(document.body));
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				  <a class="dropdown-item" href="../../Mitra/2019RadialBarChart/index.html">Radial Bar Chart</a>
 				  <a class="dropdown-item" href="../../Mitra/Dot_Chart/index.html">Dot Chart</a>
+				  <a class="dropdown-item" href="file.html">Population</a>
 				</div>
 			  </li>
-			<!-- <li><a class="active" href="/2019RadialBarChart/index.html">2019RadialBarChart</a></li> -->
-			<li><a class="active" href="tvt.html">Kay</a></li>
+			<li><a class="active" href="tvt.html">Map</a></li>
 			<li><a class="active" href="../../Mengye/webPage/shelters_loc.html">Location</a></li>
-			<li><a class="active" href="about.html">About Us</a></li>
+			<li><a class="active" href="summary.html">Summary</a></li>
 		</ul>
 	</nav>
 
-	<hr style="border: 1px solid #F8F8FF;" />
+    <hr style="border: 1px solid #F8F8FF;" />
+    
+    <div class="container-fluid">
+        <div class="jumbotron">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12">
+            <h2>SUM IT UP</h2>
+          </div>
+        </div>
+    </div>
 
-    <script type="module">
-
-        import define from "./index.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-        
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.body));
-        
-    </script>
-
+	
+	
   </body>
 </html>

@@ -11,8 +11,10 @@
 /* Body Alterations */
 body{
   font-family: "Georgia";
-  background-color: #000000;
-  color: #F8F8FF;
+  /* background-color: #000000; */
+  background-color:white;
+  /* color: #F8F8FF; */
+  color: black;
 }
 
 .container-fluid{
@@ -35,6 +37,7 @@ p.one {
 h1.display-4{
   border-style: solid;
   border-color: white;
+  /* border-color: black; */
   padding: 1% 1%;
 }
 
@@ -179,25 +182,8 @@ a.active, a:hover{
   font-synthesis: 95%;
   padding: 8px 14px;
 }
-/* End Carousel Alterations */
 
-/* Icon Alterations */
-.fa-basketball-ball{
-  color: #FF8C00;
-}
 
-.fa-gamepad {
-  color: #9932CC;
-}
-
-.fa-chart-line {
-  color: #008B8B;
-}
-
-.fa-basketball-ball, .fa-gamepad, .fa-chart-line {
-  font-size: 4rem;
-  margin: 1rem;
-}
 /* End Icon Alterations */
 
 /* Card Alterations */
