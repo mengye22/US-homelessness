@@ -31,8 +31,8 @@ https://mengye22.github.io/US-homelessness/master/templates/index.html
 * (Needs api key to dispaly the map, file on [here](Mengye/webPage/static/js/config.js) and [here](Kay/static/config.js))
 
 ### Dataset Sources: 
->* Homeless Shelter Directory: https://www.homelessshelterdirectory.org/ 
->* US Department of Housing and Urban Development: https://www.hud.gov/2019-point-in-time-estimates-of-homelessness-in-US
+>* [Homeless Shelter Directory](https://www.homelessshelterdirectory.org/)
+>* [US Department of Housing and Urban Development](https://www.hud.gov/2019-point-in-time-estimates-of-homelessness-in-US)
 
 
 ### Conclusion: 
